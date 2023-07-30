@@ -79,6 +79,8 @@ class PyFluidLib():
         system = platform.system()
         if system == "Windows":
             library_extension = ".dll"
+            libname_debug_prefix = "blpyfluiddebug"
+            libname_release_prefix = "blpyfluidrelease"
         elif system == "Darwin":
             library_extension = ".dylib"
         elif system == "Linux":
